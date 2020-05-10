@@ -1,60 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Find Your Puppy!</title>
-        <link rel="stylesheet" href="visual.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="favicon.ico">
-    </head>
-    <body>
-        <div class="hero-image">
-            <h1>Find Your Puppy!</h1>
-            <a href="#rules"><button type="button" name="button">Play Game</button></a>
-        </div>
-        <div class="rules" id="rules">
-            <h2 class="subheading">Rules</h2>
-            <p>Oh no! You were on a walk and your puppy ran into a tall flower field. Your goal is to reunite with your precious angel.</p>
-            <ol>
-                <li>No crying! 😭</li>
-                <li>Do not step on more than five flowers, we care about the environment! 🌸</li>
-                <li>Watch out for poop! 💩</li>
-                <li>Find your puppy, and you win! 🐶</li>
-            </ol>
-        </div>
+<html lang="en">
 
-        <h2 id="counter" class="subheading">Counter: 0</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelly Gowing</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel='icon' href='Assets/Images/favicon.ico' type='image/x-icon'>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="gameboard">
-            <table>
+<body>
+  <div class="container-fluid" id="full">
+    <header>
+      <!-- NAV -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-end container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#about-me">About <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#contact-me">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Jumbo Tron -->
+    <div class="jumbotron row">
+      <div class="col-lg-6">
+        <img src="Assets/Images/kelly.jpg" alt="Kelly Gowing" class="img-fluid shadow">
+      </div>
+      <div class="col-lg-6" id="intro">
+        <h1 class="display-4 p-1">WELCOME</h1>
+        <hr class="my-4">
+        <p>Hi, I'm Kelly and I'm a full stack web developer.</p>
+        <a class="btn btn-primary btn-lg" href="#contact-me" role="button">Let's work together!</a>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <section id="about-me">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center">About Me</h2>
+            <p>
+              I am a recent SDSU Marketing graduate. In December of 2019, I made the decsion to make a major career
+              change from Event Planning to Full Stack Web Development. My dream is to be a UI/UX developer, because I
+              would be able to utilize my skills in business, design, and development.
+            </p>
+            <h3 class="text-center p-1">Education</h3>
+            <p>San Diego State University: Bachelor of Science - BS, Marketing</p>
+            <p>UCSD Extention: Full Stack Web Development Bootcamp</p>
+            <h3 class="text-center p-1">Skills</h3>
+            <table class="table table-hover container-sm w-75">
+              <tbody>
                 <tr>
-                    <td onClick="changeChar(0)" id=0>🌸</td>
-                    <td onClick="changeChar(1)" id=1>🌸</td>
-                    <td onClick="changeChar(2)" id=2>🌸</td>
-                    <td onClick="changeChar(3)" id=3>🌸</td>
+                  <th scope="row">HTML & CSS</th>
+                  <td>Intermediate</td>
                 </tr>
                 <tr>
-                    <td onClick="changeChar(4)" id=4>🌸</td>
-                    <td onClick="changeChar(5)" id=5>🌸</td>
-                    <td onClick="changeChar(6)" id=6>🌸</td>
-                    <td onClick="changeChar(7)" id=7>🌸</td>
+                  <th scope="row">JavaScript</th>
+                  <td>Beginner</td>
                 </tr>
                 <tr>
-                    <td onClick="changeChar(8)" id=8>🌸</td>
-                    <td onClick="changeChar(9)" id=9>🌸</td>
-                    <td onClick="changeChar(10)" id=10>🌸</td>
-                    <td onClick="changeChar(11)" id=11>🌸</td>
+                  <th scope="row">MySQL</th>
+                  <td>Beginner</td>
                 </tr>
+                <tr>
+                  <th scope="row">Adobe Creative Cloud</th>
+                  <td>Beginner</td>
+                </tr>
+              </tbody>
             </table>
-            <h2 id="result"> </h2>
-            <button type="button" name="button" onClick="location.reload()">Restart Game</button>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img src="Assets/Images/gradcap.jpg" alt="gradcap" class="img-fluid shadow">
+          </div>
         </div>
-        <footer>
-            <a class="footer" href="https://www.instagram.com/kelly70ve/" target="_blank">Kelly G</a>
-            <a class="footer" href="https://www.instagram.com/tlizzles/" target="_blank">Tanya L</a>
-            <a class="footer" href="#Top">Back to Top</a>
-        </footer>
-        <script type="text/javascript" src="treasurehunt.js"></script>
-    </body>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="card-deck">
+          <!-- Magic Card -->
+          <div class="card shadow-sm">
+            <img src="Assets/Images/eightball.png" class="card-img-top" alt="eightball">
+            <div class="card-body">
+              <a href="https://kelly70ve.github.io/magic/" target="_blank"
+              class="btn btn-secondary btn-lg btn-block shadow">Magic 8-Ball</a>
+            </div>
+          </div>
+          <!-- Treasure Hunt Card -->
+          <div class="card shadow-sm">
+            <img src="Assets/Images/treasure.png" class="card-img-top" alt="treasure">
+            <div class="card-body">
+              <a href="https://kelly70ve.github.io/" target="_blank" class="btn btn-secondary btn-lg btn-block shadow">Treasure Hunt Game</a>
+            </div>
+          </div>
+          <!-- Work Card -->
+          <div class="card shadow-sm">
+            <img src="Assets/Images/comp.png" class="card-img-top" alt="computer">
+            <div class="card-body">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6653447094801694720/" target="_blank" class="btn btn-secondary btn-lg btn-block shadow">Site Redesign</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section id="contact-me">
+      <h2 class="text-center">Contact Me</h2>
+      <form class="container" action="https://formspree.io/xjvearze"
+      method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1"
+            placeholder="Email Address" name="_replyto">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary shadow" value="send">Submit</button>
+        <input type="hidden" name="_next" value="https://kelly70ve.github.io/homework2/"/>
+      </form>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="row">
+      <a href="https://www.linkedin.com/in/kellygowing" class="fa fa-linkedin" target="_blank"></a>
+      <a href="https://www.facebook.com/kelly.gowing" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.instagram.com/kelly70ve/" class="fa fa-instagram" target="_blank"></a>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

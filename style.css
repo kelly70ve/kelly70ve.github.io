@@ -1,0 +1,95 @@
+/* Multiple Styling */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #0B3954;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#full {
+  padding: 0px;
+}
+
+/* buttons */
+.btn {
+  background-color: #0F4C81;
+  border: none;
+  color: #ffffff !important;
+}
+.btn:hover {
+  background-color: #39a5a2;
+  color: #ffffff !important;
+}
+
+
+/* Links*/
+a {
+  color: #0F4C81 !important;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #39a5a2 !important;
+  text-decoration: none;
+}
+
+
+/* Jumbotron */
+
+h1 {
+  font-family: 'Bitter', serif;
+  color: #e1b0a8;
+  font-size: 40px;
+  letter-spacing: .1em;
+}
+.jumbotron {
+  background-color: white;
+  height: 80vh; 
+  display: flex;
+  align-content: center;
+  font-size: 30px;
+}
+
+#intro {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* Sections (About, Portfolio, Contact)*/
+section { 
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+h2 {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+/* About me */
+#about-me {
+  background-color: #f5f5f5;
+}
+
+/* Contact Me */
+#contact-me {
+  background-color: #f5f5f5;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
