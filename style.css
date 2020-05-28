@@ -32,8 +32,7 @@ a {
   font-size: 25px;
 }
 
-a:hover {
-  color: #39a5a2 !important;
+.btn:hover {
   text-decoration: none;
 }
 
